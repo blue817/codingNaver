@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naver WebPage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
 
@@ -14,14 +17,14 @@
         <div class="quick_area">
             <ul>
                 <li><a href="#">네이버를 시작페이지로</a></li>
-                <li><a href="#">쥬니어네이버</a></li>
-                <li><a href="#">해피빈</a></li>
+                <li><a href="#"><span class="blind">쥬니어네이버 바로가기</span></a></li>
+                <li><a href="#"><span class="blind">해피빈 바로가기</span></a></li>
             </ul>
         </div>
         <div class="header">
             <h1><a href="#"><span class="blind">네이버</span></a></h1>
             <div class="search_area">
-                <form action="">
+                <form>
                     <fieldset>
                         <legend class="blind">검색창</legend>
                         <div class="input_text">
@@ -38,22 +41,22 @@
         <div class="menu_area">
             <nav>
                 <ul class="lnb">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#">메일</a></li>
+                    <li><a href="#">카페</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">지식iN</a></li>
+                    <li><a href="#">쇼핑</a></li>
+                    <li><a href="#"><span class="blind">쇼핑Live</span></a></li>
+                    <li><a href="#">Pay</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">사전</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">증권</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지도</a></li>
+                    <li><a href="#">VIBE</a></li>
+                    <li><a href="#">도서</a></li>
+                    <li><a href="#">웹툰</a></li>
                 </ul>
                 <button class="btn_more_menu is_close">더보기</button>
                 <button class="btn_more_menu is_open">접기</button>
@@ -164,30 +167,27 @@
                 </ul>
             </div>
         </div>
-
     </header>
 
     <!-- Container Area -->
     <div class="container">
         <!-- Main Area -->
         <div class="main_section">
-            <div class="banner_area">
+            <div class="banner_area01">
                 <img src="images/banner1.jpg" alt="갤럭시 Z플립4 사전판매 바로가기">
             </div>
             <div class="slider_news">
                 <a class="news_all">연합뉴스</a>
                 <div class="swiper">
                     <ul class="swiper-wrapper">
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
-                        <li class="swiper-slide"><a href="#" class="news_tit"></a></li>
+                        <li class="swiper-slide"><a href="#" class="news_tit">단기외채 41.9% '10년만에 최고'…한은·정부 "건전성은 양호"</a></li>
+                        <li class="swiper-slide"><a href="#" class="news_tit">'우회전 일시정지' 도로교통법 시행 후 관련 사고 51% 감소</a></li>
+                        <li class="swiper-slide"><a href="#" class="news_tit">김현숙 장관 "'성격차지수' 개선해야…그래도 여가부는 폐지"</a></li>
+                        <li class="swiper-slide"><a href="#" class="news_tit">소음저감매트 설치하면 이자 지원…대단지 층간소음관리위 의무화</a></li>
                     </ul>
                 </div>
                 <ul class="news_catelink">
-                    <li><a href="#">뉴스홈</a></li>
+                    <li><a href="#" class="is_act">뉴스홈</a></li>
                     <li><a href="#">연예</a></li>
                     <li><a href="#">스포츠</a></li>
                     <li><a href="#">경제</a></li>
@@ -526,18 +526,16 @@
                     </div>
                 </div>
                 <div class="type_list">
-                    <button class="nav_prev"><i class="ui01"><span class="blind">이전</span></i></button>
-                    <button class="nav_next"><i class="ui01"><span class="blind">다음</span></i></button>
                     <ul class="tab_slide_menu">
-                        <li><a href="#">종합/경제</a></li>
-                        <li><a href="#">방송/통신</a></li>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">영자지</a></li>
-                        <li><a href="#">스포츠/연예</a></li>
-                        <li><a href="#">매거진/전문지</a></li>
-                        <li><a href="#">지역</a></li>
+                        <li><button>종합/경제</button></li>
+                        <li><button>방송/통신</button></li>
+                        <li><button>IT</button></li>
+                        <li><button>영자지</button></li>
+                        <li><button>스포츠/연예</button></li>
+                        <li><button>매거진/전문지</button></li>
+                        <li><button>지역</button></li>
                     </ul>
-                    <div class="swiper">
+                    <div class="swiper news_cate01">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
                                 <div class="news_info">
@@ -547,30 +545,492 @@
                                 </div>
                                 <div class="img_area">
                                     <div class="img_wrap">
-                                        <img src="" alt="">
+                                        <img src="images/new01.jpg" alt="한전 건물이미지">
                                     </div>
-                                    <p class="txt_wrap"></p>
+                                    <p class="txt_wrap">
+                                        “적자경영 타개, 마른수건도 짜낸다”…한전, 121억 규모 비상장주식 매각 추진
+                                    </p>
                                 </div>
                                 <ul class="news_tit">
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
+                                    <li><a href="#">현대차·기아, 특허 1년 새 5000건 이상 늘어…5만건 돌파 눈앞</a></li>
+                                    <li><a href="#">CJ제일제당, 민간기업 시드피아와 신규 쌀 품종 개발 나서</a></li>
+                                    <li><a href="#">반토막 난 증권사 상반기 실적…하반기 회복세 기대</a></li>
+                                    <li><a href="#">현대차·기아, 특허 1년 새 5000건 이상 늘어…5만건 돌파 눈앞</a></li>
+                                    <li><a href="#">CJ제일제당, 민간기업 시드피아와 신규 쌀 품종 개발 나서</a></li>
+                                    <li><a href="#">반토막 난 증권사 상반기 실적…하반기 회복세 기대</a></li>
                                 </ul>
-                                <!-- 스크립트로 넣기 -->
-                                <span>블로터 언론사에서 직접 편집한 뉴스입니다.</span>
+                                <span>CEO스코어데일리에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news02.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [속보]검찰총장에 이원석···공정거래위원장 한기정 내정
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">성균관대 학생들 “선배 팔아남긴 김순호, 경찰국장 사퇴하라”</a></li>
+                                    <li><a href="#">서울 아파트값 3년4개월 만에 최대 하락···“가격 내려도 안팔려”</a></li>
+                                    <li><a href="#">박형준, BTS 대체복무 적용 대통령에 건의</a></li>
+                                    <li><a href="#">성균관대 학생들 “선배 팔아남긴 김순호, 경찰국장 사퇴하라”</a></li>
+                                    <li><a href="#">서울 아파트값 3년4개월 만에 최대 하락···“가격 내려도 안팔려”</a></li>
+                                    <li><a href="#">박형준, BTS 대체복무 적용 대통령에 건의</a></li>
+                                </ul>
+                                <span>경향신문 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news03.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “수원에서 치매 어르신이 실종됐습니다... 급하게 도움 요청드립니다”
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                </ul>
+                                <span>위키트리 언론사에서 직접 편집한 뉴스입니다.</span>
                             </li>
                         </ul>
+                        <div class="pagination"></div>
                     </div>
+                    <div class="swiper news_cate02">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news2-1.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [여론조사]'尹대통령'하면 가장 먼저 '절망' 떠올라..김건희 비호감 66.4%
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">[여론조사]"지지층 너마저"..4명 중 1명 尹대통령 지지철회</a></li>
+                                    <li><a href="#">[여론조사]국민의힘 유승민·민주당 이재명..차기 당대표 선두</a></li>
+                                    <li><a href="#">신세계, 광주에 스타필드-백화점 동시 개발 추진</a></li>
+                                    <li><a href="#">[여론조사]"지지층 너마저"..4명 중 1명 尹대통령 지지철회</a></li>
+                                    <li><a href="#">[여론조사]국민의힘 유승민·민주당 이재명..차기 당대표 선두</a></li>
+                                    <li><a href="#">신세계, 광주에 스타필드-백화점 동시 개발 추진</a></li>
+                                </ul>
+                                <span>KBC광주방송 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news2-2.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [단독] 대웅제약, LG화학 ‘휴미라 시밀러’ 국내 독점 판매
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">공정거래위원장에 한기정 교수…"시장주의 경제원칙 존중"</a></li>
+                                    <li><a href="#">한동훈, 尹정부 초대 검찰총장 이원석 임명 제청</a></li>
+                                    <li><a href="#">47년 여의도 공작아파트, 최고 49층까지 짓는다</a></li>
+                                    <li><a href="#">공정거래위원장에 한기정 교수…"시장주의 경제원칙 존중"</a></li>
+                                    <li><a href="#">한동훈, 尹정부 초대 검찰총장 이원석 임명 제청</a></li>
+                                    <li><a href="#">47년 여의도 공작아파트, 최고 49층까지 짓는다</a></li>
+                                </ul>
+                                <span>SBS Biz 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="swiper news_cate03">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news3-1.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        파운트가 투자 침체기를 극복하는 법…수요자 맞춤형 정보 강화
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">[공시분석]일본 가는 '네이버제트'...글로벌 현지화·대외협력 올인</a></li>
+                                    <li><a href="#">하이트진로, 밀린 세금 냈더니…이익 개선 불구 현금흐름 적자</a></li>
+                                    <li><a href="#">카카오, 모빌리티 매각 중단…'계열사 정리' 미칠 영향은</a></li>
+                                    <li><a href="#">[공시분석]일본 가는 '네이버제트'...글로벌 현지화·대외협력 올인</a></li>
+                                    <li><a href="#">하이트진로, 밀린 세금 냈더니…이익 개선 불구 현금흐름 적자</a></li>
+                                    <li><a href="#">카카오, 모빌리티 매각 중단…'계열사 정리' 미칠 영향은</a></li>
+                                </ul>
+                                <span>블로터에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news3-2.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        금융권 가상자산 경고 잇따라...3대 리스크는 무엇?
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">메타, 서울대학교와 'XR 익스피리언스 센터' 개관</a></li>
+                                    <li><a href="#">인공지능 보험 진단 서비스 보닥, 마이데이터 활용 신버전 출시</a></li>
+                                    <li><a href="#">SK텔레콤, 유무선 통합 허브로 네트워크 관리 강화</a></li>
+                                    <li><a href="#">메타, 서울대학교와 'XR 익스피리언스 센터' 개관</a></li>
+                                    <li><a href="#">인공지능 보험 진단 서비스 보닥, 마이데이터 활용 신버전 출시</a></li>
+                                    <li><a href="#">SK텔레콤, 유무선 통합 허브로 네트워크 관리 강화</a></li>
+                                </ul>
+                                <span>디지털투데이 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news03.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “수원에서 치매 어르신이 실종됐습니다... 급하게 도움 요청드립니다”
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                </ul>
+                                <span>위키트리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="swiper news_cate04">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/new01.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        The metaverse isn't here yet, but it already has a long history
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">US: House passes Inflation Reduction Act, to be signed into law</a></li>
+                                    <li><a href="#">Samsung’s heir Lee Jae Yong granted special pardon to help revive the South Korean economy</a></li>
+                                    <li><a href="#">America’s Roundup:U.S. dollar index gains, Wall Street indexes close up, Gold gains, Oil prices sheds 2% a barrel-August 13th,2022</a></li>
+                                    <li><a href="#">US: House passes Inflation Reduction Act, to be signed into law</a></li>
+                                    <li><a href="#">Samsung’s heir Lee Jae Yong granted special pardon to help revive the South Korean economy</a></li>
+                                    <li><a href="#">America’s Roundup:U.S. dollar index gains, Wall Street indexes close up, Gold gains, Oil prices sheds 2% a barrel-August 13th,2022</a></li>
+                                </ul>
+                                <span>이코노타임즈 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news02.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        Yoon Suk-yeol not looking for regime change in North Korea
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">North responds to Yoon Suk-yeol's olive branch with cruise missiles</a></li>
+                                    <li><a href="#">Yoon remains committed to free markets and chip support</a></li>
+                                    <li><a href="#">Covid cases soar to four-month high</a></li>
+                                    <li><a href="#">North responds to Yoon Suk-yeol's olive branch with cruise missiles</a></li>
+                                    <li><a href="#">Yoon remains committed to free markets and chip support</a></li>
+                                    <li><a href="#">Covid cases soar to four-month high</a></li>
+                                </ul>
+                                <span>중앙데일리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news03.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “수원에서 치매 어르신이 실종됐습니다... 급하게 도움 요청드립니다”
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                </ul>
+                                <span>위키트리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="swiper news_cate05">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news2-1.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [여론조사]'尹대통령'하면 가장 먼저 '절망' 떠올라..김건희 비호감 66.4%
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">[여론조사]"지지층 너마저"..4명 중 1명 尹대통령 지지철회</a></li>
+                                    <li><a href="#">[여론조사]국민의힘 유승민·민주당 이재명..차기 당대표 선두</a></li>
+                                    <li><a href="#">신세계, 광주에 스타필드-백화점 동시 개발 추진</a></li>
+                                    <li><a href="#">[여론조사]"지지층 너마저"..4명 중 1명 尹대통령 지지철회</a></li>
+                                    <li><a href="#">[여론조사]국민의힘 유승민·민주당 이재명..차기 당대표 선두</a></li>
+                                    <li><a href="#">신세계, 광주에 스타필드-백화점 동시 개발 추진</a></li>
+                                </ul>
+                                <span>KBC광주방송 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news2-2.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [단독] 대웅제약, LG화학 ‘휴미라 시밀러’ 국내 독점 판매
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">공정거래위원장에 한기정 교수…"시장주의 경제원칙 존중"</a></li>
+                                    <li><a href="#">한동훈, 尹정부 초대 검찰총장 이원석 임명 제청</a></li>
+                                    <li><a href="#">47년 여의도 공작아파트, 최고 49층까지 짓는다</a></li>
+                                    <li><a href="#">공정거래위원장에 한기정 교수…"시장주의 경제원칙 존중"</a></li>
+                                    <li><a href="#">한동훈, 尹정부 초대 검찰총장 이원석 임명 제청</a></li>
+                                    <li><a href="#">47년 여의도 공작아파트, 최고 49층까지 짓는다</a></li>
+                                </ul>
+                                <span>SBS Biz 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="swiper news_cate06">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/new01.jpg" alt="한전 건물이미지">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “적자경영 타개, 마른수건도 짜낸다”…한전, 121억 규모 비상장주식 매각 추진
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">현대차·기아, 특허 1년 새 5000건 이상 늘어…5만건 돌파 눈앞</a></li>
+                                    <li><a href="#">CJ제일제당, 민간기업 시드피아와 신규 쌀 품종 개발 나서</a></li>
+                                    <li><a href="#">반토막 난 증권사 상반기 실적…하반기 회복세 기대</a></li>
+                                    <li><a href="#">현대차·기아, 특허 1년 새 5000건 이상 늘어…5만건 돌파 눈앞</a></li>
+                                    <li><a href="#">CJ제일제당, 민간기업 시드피아와 신규 쌀 품종 개발 나서</a></li>
+                                    <li><a href="#">반토막 난 증권사 상반기 실적…하반기 회복세 기대</a></li>
+                                </ul>
+                                <span>CEO스코어데일리에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news02.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        [속보]검찰총장에 이원석···공정거래위원장 한기정 내정
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">성균관대 학생들 “선배 팔아남긴 김순호, 경찰국장 사퇴하라”</a></li>
+                                    <li><a href="#">서울 아파트값 3년4개월 만에 최대 하락···“가격 내려도 안팔려”</a></li>
+                                    <li><a href="#">박형준, BTS 대체복무 적용 대통령에 건의</a></li>
+                                    <li><a href="#">성균관대 학생들 “선배 팔아남긴 김순호, 경찰국장 사퇴하라”</a></li>
+                                    <li><a href="#">서울 아파트값 3년4개월 만에 최대 하락···“가격 내려도 안팔려”</a></li>
+                                    <li><a href="#">박형준, BTS 대체복무 적용 대통령에 건의</a></li>
+                                </ul>
+                                <span>경향신문 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news03.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “수원에서 치매 어르신이 실종됐습니다... 급하게 도움 요청드립니다”
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                </ul>
+                                <span>위키트리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="swiper news_cate07">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/new01.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        The metaverse isn't here yet, but it already has a long history
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">US: House passes Inflation Reduction Act, to be signed into law</a></li>
+                                    <li><a href="#">Samsung’s heir Lee Jae Yong granted special pardon to help revive the South Korean economy</a></li>
+                                    <li><a href="#">America’s Roundup:U.S. dollar index gains, Wall Street indexes close up, Gold gains, Oil prices sheds 2% a barrel-August 13th,2022</a></li>
+                                    <li><a href="#">US: House passes Inflation Reduction Act, to be signed into law</a></li>
+                                    <li><a href="#">Samsung’s heir Lee Jae Yong granted special pardon to help revive the South Korean economy</a></li>
+                                    <li><a href="#">America’s Roundup:U.S. dollar index gains, Wall Street indexes close up, Gold gains, Oil prices sheds 2% a barrel-August 13th,2022</a></li>
+                                </ul>
+                                <span>이코노타임즈 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news02.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        Yoon Suk-yeol not looking for regime change in North Korea
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">North responds to Yoon Suk-yeol's olive branch with cruise missiles</a></li>
+                                    <li><a href="#">Yoon remains committed to free markets and chip support</a></li>
+                                    <li><a href="#">Covid cases soar to four-month high</a></li>
+                                    <li><a href="#">North responds to Yoon Suk-yeol's olive branch with cruise missiles</a></li>
+                                    <li><a href="#">Yoon remains committed to free markets and chip support</a></li>
+                                    <li><a href="#">Covid cases soar to four-month high</a></li>
+                                </ul>
+                                <span>중앙데일리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="news_info">
+                                    <a href="#" class="news_logo"><span class="blind"></span></a>
+                                    <span class="news_date">2022.08.17. 16:44 편집</span>
+                                    <button class="sum_addsubscr list_addsubscr">구독하기</button>
+                                </div>
+                                <div class="img_area">
+                                    <div class="img_wrap">
+                                        <img src="images/news03.jpg" alt="">
+                                    </div>
+                                    <p class="txt_wrap">
+                                        “수원에서 치매 어르신이 실종됐습니다... 급하게 도움 요청드립니다”
+                                    </p>
+                                </div>
+                                <ul class="news_tit">
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                    <li><a href="#">강승윤과 열애설 터진 여배우, 알고 보니 '고등래퍼' 나왔던 그 사람 (+인스타 사진)</a></li>
+                                    <li><a href="#">“먼저 협박했다” 비행기 폭언남, 방송서 여론 싹 뒤집힐 '주장' 펼쳤다</a></li>
+                                    <li><a href="#">대박…꽁꽁 싸매고 '혼자' 영화 보러 극장에 나타난 톱걸그룹 멤버 (+정체)</a></li>
+                                </ul>
+                                <span>위키트리 언론사에서 직접 편집한 뉴스입니다.</span>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                    <button class="nav_prev"><i class="ui01"><span class="blind">이전</span></i></button>
+                    <button class="nav_next"><i class="ui01"><span class="blind">다음</span></i></button>
                 </div>
             </div>
-            <div class="reco_txt">
+            <div class="reco_area">
                 <div class="reco_tit">
                     <span><strong>오늘 읽을만한 글</strong><span>주제별로 분류된 다양한 글 모음</span></span>
                     <span><span><span>671</span>개의 글</span><a href="#">관심주제 설정</a></span>
@@ -596,13 +1056,16 @@
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_01.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_author"></span>
-                                    <strong class="vd_tit"></strong>
-                                    <p class="vd_dec"></p>
-                                    <span class="vd_hash"></span>
+                                    <span class="txt_author">[푸드클래스]이밥차</span>
+                                    <strong class="vd_tit">밥반찬 겸 술안주로 좋은 '유부 가지볶음'</strong>
+                                    <p class="vd_dec">
+                                        <span>센 불에서 재빨리 볶는 게 포인트</span>
+                                        <span>풍부한 식감에 감칠맛도 쏙 배서 꿀맛!</span>
+                                    </p>
+                                    <span class="vd_hash">#굴소스 #가지요리</span>
                                 </div>
                             </a>
                             <button class="btn_youtube"><i class="ui01"><span class="blind">유튜브바로가기</span></i></button>
@@ -610,13 +1073,16 @@
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_02.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_author"></span>
-                                    <strong class="vd_tit"></strong>
-                                    <p class="vd_dec"></p>
-                                    <span class="vd_hash"></span>
+                                    <span class="txt_author">[푸드클래스] 만개의 레시피	</span>
+                                    <strong class="vd_tit">비싸게 시킬 필요 없는 배달음식 레시피</strong>
+                                    <p class="vd_dec">
+                                        <span>중화요리부터 디저트 메뉴까지</span>
+                                        <span>집에서도 쉽고 맛있게 만들 수 있어요</span>
+                                    </p>
+                                    <span class="vd_hash">#맛집따라하기 #배달요리</span>
                                 </div>
                             </a>
                             <button class="btn_youtube"><i class="ui01"><span class="blind">유튜브바로가기</span></i></button>
@@ -626,78 +1092,68 @@
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci03.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">NO WAR, MAKE A PEACE</strong>
+                                    <p class="recipe_desc">하루팔찌와 함께 팔찌 속 세가지 색깔에 담긴 전쟁피해아동들의 이야기를 전해주세요. 
+                                    </p>
+                                    <span class="recipe_date"><span>코스모폴리탄</span><span>1주일전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_04.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">무장 해제되는 맛! 눈이 즐거운 이색 빙수</strong>
+                                    <p class="recipe_desc">눈이 즐거운 별별 이색 빙수에어컨만으로 한여름의 찜통 더위가 싹 가시지 않을 땐 사막의 오아시스처럼 빙수가 절실하기 마련이죠. 한입 넣으면 발끝까지 얼얼할 정도로 짜릿하게 퍼지는 시원시원함이란! 그리고 무장 해제되는 맛에 정신이 번쩍 들고, 얼음이 녹을세라 그릇 바닥이 드러날 때까지 숟가락을 쉼 없이 움직이게 되는데요. 여기서 잠깐, 허겁지겁 쓸어 담기 전</p>
+                                    <span class="recipe_date"><span>매거진 맛</span><span>1주일 전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci03.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">NO WAR, MAKE A PEACE</strong>
+                                    <p class="recipe_desc">하루팔찌와 함께 팔찌 속 세가지 색깔에 담긴 전쟁피해아동들의 이야기를 전해주세요. 
+                                    </p>
+                                    <span class="recipe_date"><span>코스모폴리탄</span><span>1주일전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_04.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">무장 해제되는 맛! 눈이 즐거운 이색 빙수</strong>
+                                    <p class="recipe_desc">눈이 즐거운 별별 이색 빙수에어컨만으로 한여름의 찜통 더위가 싹 가시지 않을 땐 사막의 오아시스처럼 빙수가 절실하기 마련이죠. 한입 넣으면 발끝까지 얼얼할 정도로 짜릿하게 퍼지는 시원시원함이란! 그리고 무장 해제되는 맛에 정신이 번쩍 들고, 얼음이 녹을세라 그릇 바닥이 드러날 때까지 숟가락을 쉼 없이 움직이게 되는데요. 여기서 잠깐, 허겁지겁 쓸어 담기 전</p>
+                                    <span class="recipe_date"><span>매거진 맛</span><span>1주일 전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci03.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">NO WAR, MAKE A PEACE</strong>
+                                    <p class="recipe_desc">하루팔찌와 함께 팔찌 속 세가지 색깔에 담긴 전쟁피해아동들의 이야기를 전해주세요. 
+                                    </p>
+                                    <span class="recipe_date"><span>코스모폴리탄</span><span>1주일전</span></span>
                                 </div>
                             </a>
                         </li>
@@ -709,9 +1165,8 @@
                                     <img src="" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_author"></span>
-                                    <strong class="vd_tit"></strong>
-                                    <span class="vd_date"></span>
+                                    <strong class="vd_tit">곰팡이 핀 양파, 아깝다고 잘라서 먹지 마세요</strong>
+                                    <span class="recipe_date"><span>백년밥상TV</span><span>2년전</span></span>
                                 </div>
                             </a>
                             <button class="btn_youtube"><i class="ui01"><span class="blind">유튜브바로가기</span></i></button>
@@ -722,9 +1177,20 @@
                                     <img src="" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_author"></span>
-                                    <strong class="vd_tit"></strong>
-                                    <span class="vd_date"></span>
+                                    <strong class="vd_tit">곰팡이 핀 양파, 아깝다고 잘라서 먹지 마세요</strong>
+                                    <span class="recipe_date"><span>백년밥상TV</span><span>2년전</span></span>
+                                </div>
+                            </a>
+                            <button class="btn_youtube"><i class="ui01"><span class="blind">유튜브바로가기</span></i></button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="txt_wrap">
+                                    <strong class="vd_tit">곰팡이 핀 양파, 아깝다고 잘라서 먹지 마세요</strong>
+                                    <span class="recipe_date"><span>백년밥상TV</span><span>2년전</span></span>
                                 </div>
                             </a>
                             <button class="btn_youtube"><i class="ui01"><span class="blind">유튜브바로가기</span></i></button>
@@ -734,94 +1200,126 @@
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_06.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">[파스타 만들기] 아웃백 인기메뉴 스타일 크림파스타 투움바파스타 만들기</strong>
+                                    <p class="recipe_dec">리지테이블의 맛있는 한끼 레시피 [오늘의 메뉴 : 투움바 파스타] 난이도 : 별 2.5개 소요시간 : 약 40분 [재료] 페투치네 파스타면 2인분, 양송이버섯 8개, 새우 8개, 버터 2큰스푼, 케찹 1/2큰스푼, 치즈 약간, 파슬리 약간, 소금 약간, 후추 약간 - 파스타면 삶기 - 물 1L, 올리브오일 약간, 소금 약간 - 양념소스 - 생크림 400ml</p>
+                                    <span class="recipe_date"><span>리지테이블</span><span>2개월전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_06.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">[파스타 만들기] 아웃백 인기메뉴 스타일 크림파스타 투움바파스타 만들기</strong>
+                                    <p class="recipe_dec">리지테이블의 맛있는 한끼 레시피 [오늘의 메뉴 : 투움바 파스타] 난이도 : 별 2.5개 소요시간 : 약 40분 [재료] 페투치네 파스타면 2인분, 양송이버섯 8개, 새우 8개, 버터 2큰스푼, 케찹 1/2큰스푼, 치즈 약간, 파슬리 약간, 소금 약간, 후추 약간 - 파스타면 삶기 - 물 1L, 올리브오일 약간, 소금 약간 - 양념소스 - 생크림 400ml</p>
+                                    <span class="recipe_date"><span>리지테이블</span><span>2개월전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_06.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">[파스타 만들기] 아웃백 인기메뉴 스타일 크림파스타 투움바파스타 만들기</strong>
+                                    <p class="recipe_dec">리지테이블의 맛있는 한끼 레시피 [오늘의 메뉴 : 투움바 파스타] 난이도 : 별 2.5개 소요시간 : 약 40분 [재료] 페투치네 파스타면 2인분, 양송이버섯 8개, 새우 8개, 버터 2큰스푼, 케찹 1/2큰스푼, 치즈 약간, 파슬리 약간, 소금 약간, 후추 약간 - 파스타면 삶기 - 물 1L, 올리브오일 약간, 소금 약간 - 양념소스 - 생크림 400ml</p>
+                                    <span class="recipe_date"><span>리지테이블</span><span>2개월전</span></span>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="img_wrap">
-                                    <img src="" alt="">
+                                    <img src="images/reci_06.jpg" alt="">
                                 </div>
                                 <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="txt_wrap">
-                                    <span class="txt_cate"></span>
-                                    <strong class="recipe_tit"></strong>
-                                    <p class="recipe_dec"></p>
-                                    <span class="recipe_date"><span></span><span></span></span>
+                                    <span class="txt_cate">레시피</span>
+                                    <strong class="recipe_tit">[파스타 만들기] 아웃백 인기메뉴 스타일 크림파스타 투움바파스타 만들기</strong>
+                                    <p class="recipe_dec">리지테이블의 맛있는 한끼 레시피 [오늘의 메뉴 : 투움바 파스타] 난이도 : 별 2.5개 소요시간 : 약 40분 [재료] 페투치네 파스타면 2인분, 양송이버섯 8개, 새우 8개, 버터 2큰스푼, 케찹 1/2큰스푼, 치즈 약간, 파슬리 약간, 소금 약간, 후추 약간 - 파스타면 삶기 - 물 1L, 올리브오일 약간, 소금 약간 - 양념소스 - 생크림 400ml</p>
+                                    <span class="recipe_date"><span>리지테이블</span><span>2개월전</span></span>
                                 </div>
                             </a>
                         </li>
                     </ul>
                     <div class="swiper">
+                        <div class="click_tit">
+                            <a href="#">마음까지 채우는 클릭</a>
+                        </div>
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="" alt="">
-                                    </div>
-                                    <p class="txt_dex"></p>
-                                    <span><span></span><span></span></span>
-                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_08.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">머리부터 발끝까지 올인원으로 간편한 바디워시</p>
+                                            <span><span>히든테이스트</span><span><em>523%</em></span>달성</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_08.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">머리부터 발끝까지 올인원으로 간편한 바디워시</p>
+                                            <span><span>히든테이스트</span><span><em>523%</em></span>달성</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_08.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">머리부터 발끝까지 올인원으로 간편한 바디워시</p>
+                                            <span><span>히든테이스트</span><span><em>523%</em></span>달성</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="swiper-slide">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_07.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">생무화과, 청귤, 허브의 향을 간직한 과일청</p>
+                                            <span><span>하바구무화과</span><span><em>2,808%</em>달성</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_07.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">생무화과, 청귤, 허브의 향을 간직한 과일청</p>
+                                            <span><span>하바구무화과</span><span><em>2,808%</em>달성</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/reci_07.jpg" alt="">
+                                            </div>
+                                            <p class="txt_desc">생무화과, 청귤, 허브의 향을 간직한 과일청</p>
+                                            <span><span>하바구무화과</span><span><em>2,808%</em>달성</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <button class="next"><span class="blind">다음</span></button>
                     </div>
                     <div class="btn_box">
                         <button class="btn_more_content"><span class="blind">새로운글 더보기</span></button>
@@ -833,12 +1331,652 @@
 
         <!-- Add Area -->
         <div class="add_section">
-
+            <div class="login_area">
+                <div class="my_box">
+                    <div class="myimg">
+                        <img src="images/my.jpg" alt="">
+                        <span class="setting_img"><span class="blind">내정보 변경하기</span></span>
+                    </div>
+                    <div class="my_info">
+                        <span class="my_tit"><strong class="my_id">blue817님</strong><span>네이버ID</span><i class="ui01"><span class="blind">로그인 보호 설정</span></i></span>
+                        <span class="my_email">espoir3045@naver.com</span>
+                    </div>
+                    <ul>
+                        <li><a href="#"><span class="my_cate">메일</span><span class="mail_count"></span></a></li>
+                        <li><a href="#"><span class="my_cate">쪽지</span><span class="msg_count"></span></a></li>
+                        <li><a href="#"><span class="blind">멤버십 이동 링크</span>시작하기</a></li>
+                    </ul>
+                    <a href="#" class="my_sign">로그아웃</a>
+                </div>
+                <div class="swiper my_cateslide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">알림<span class="alram_count">1</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">구독<span class="subscr_count">1</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">메일<span class="mail_count">117</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">카페</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">블로그<span class="blog_count">1</span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">페이</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">포스트<span class="post_count"></span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">MYBOX<span class="new_point"></span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">오피스<span class="new_point"></span></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">캘린더</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">해피빈</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">지식iN</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">메모</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">설정</a>
+                        </li>
+                    </ul>
+                    <button class="prev"><span class="blind">이전</span></button>
+                    <button class="next"><span class="blind">다음</span></button>
+                </div>
+            </div>
+            <div class="issue_slide swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <span class="issue_cate">이슈</span>
+                            <span>코로나바이러스감염증-19 현황</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <span class="issue_cate">환율</span>
+                            <span>USD <span>1,315.60</span> <span>0.40 -0.03%</span></span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <span class="issue_cate">증시</span>
+                            <span>코스피 <span>2,507.09</span> <span>9.38 -0.37%</span></span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <span class="issue_cate">증시</span>
+                            <span>코스닥<span>825.20</span> <span>2.22 -0.27%</span></span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="prev"><span class="blind">이전</span></button>
+                <button class="next"><span class="blind">다음</span></button>
+            </div>
+            <div class="banner_area02">
+                <img src="images/banner2.jpg" alt="더챔버 파크 로지아 분양문의 광고이미지">
+            </div>
+            <div class="trend_shop">
+                <div class="trend_tit">
+                    <span class="trend_link">트렌드 쇼핑</span>
+                    <ul class="trend_cate">
+                        <li><a href="#">상품</a></li>
+                        <li><a href="#" class="is_act">쇼핑몰</a></li>
+                        <li><a href="#">NEM</a></li>
+                    </ul>
+                </div>
+                <div class="trend_slider01 swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="trend_brand">
+                                <img src="images/gmarket.png" alt="">
+                            </div>
+                            <div class="trend_con brand_gmarket">
+                                <ul class="main_img">
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend01.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">편한데 예뻐서 매일 입어~</strong>
+                                                <span class="pdt_desc">상하SET 만원대로 가져가!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend01.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">편한데 예뻐서 매일 입어~</strong>
+                                                <span class="pdt_desc">상하SET 만원대로 가져가!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend02.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">10인분만원대실화</strong>
+                                                <span class="pdt_desc">간편볶음밥 뚝딱!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="new_sale"><span>신상특가</span><span>스마일프레시 1+1부터 초특가까지!</span></a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="trend_brand">
+                                <img src="images/trendlogo2.png" alt="">
+                            </div>
+                            <div class="trend_con brand_gmarket">
+                                <ul class="main_img">
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend05.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">일단 뿌려봐!</strong>
+                                                <span class="pdt_desc">누수 완벽차단!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend05.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">일단 뿌려봐!</strong>
+                                                <span class="pdt_desc">누수 완벽차단!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img_wrap">
+                                                <img src="images/trend06.jpg" alt="">
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <strong class="pdt_name">이거 만든분</strong>
+                                                <span class="pdt_desc">천재인가요?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="new_sale"><span>신상특가</span><span>upto ~69%↓</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav_box nav01">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <div class="pagination"></div>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                    <div class="nav_box nav02">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <div class="pagination"></div>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+                <div class="trend_slider02 swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="" class="brand_tit">CLEO끌레오</a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="" class="brand_tit">CLEO끌레오</a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="" class="brand_tit">CLEO끌레오</a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="brand_tit"></a>
+                                    <div class="img_wrap">
+                                        <img src="images/trend07.jpg" alt="">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <strong>국내배송으로</strong>
+                                        <span class="pdt_desc">3인용 699,000원</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav_box nav03">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <div class="pagination"></div>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+                <div class="trend_slider03 swiper">
+                    <div class="plus_sale">
+                        <span>원쁠딜 전 상품 무료배송!</span>
+                    </div>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/1+1.jpg" alt="">
+                                            <img src="images/1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/1+1.jpg" alt="">
+                                            <img src="images/1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/1+1.jpg" alt="">
+                                            <img src="images/1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/2-1+1.jpg" alt="">
+                                            <img src="images/2-1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/2-1+1.jpg" alt="">
+                                            <img src="images/2-1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/2-1+1.jpg" alt="">
+                                            <img src="images/2-1-1-2.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="pdt_desc">달코옴~한 추희사과 1+1</span>
+                                            <span><span>71%</span><span>12,900원</span></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                    </ul>
+                    <div class="nav_box nav04">
+                        <button class="prev"><span class="blind">이전</span></button>
+                        <div class="pagination"></div>
+                        <button class="next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Footer Area -->
-    <footer></footer>
-
+    <footer>
+        <div class="campaign_area">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="images/cyber.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <span>대한민국 경찰청 주최</span>
+                            <strong>ISCR 2022</strong>
+                            <span class="campaign_desc">여러분을 초대합니다. 지금 사전등록 하세요!</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="images/cyber.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <span>대한민국 경찰청 주최</span>
+                            <strong>ISCR 2022</strong>
+                            <span class="campaign_desc">여러분을 초대합니다. 지금 사전등록 하세요!</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="images/cyber.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <span>대한민국 경찰청 주최</span>
+                            <strong>ISCR 2022</strong>
+                            <span class="campaign_desc">여러분을 초대합니다. 지금 사전등록 하세요!</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="notice_area">
+                <a href="#">공지사항</a>
+                <a href="#">서비스 전체보기</a>
+            </div>
+            <div class="util_link">
+                <ul class="util_quick1">
+                    <li>
+                        <strong>Creators</strong>
+                        <ul>
+                            <li><a href="#">크리에이터</a></li>
+                            <li><a href="#">스몰비즈니스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Partners</strong>
+                        <ul>
+                            <li><a href="#">SME 풀케어 시스템</a></li>
+                            <li><a href="#">비즈니스 · 광고</a></li>
+                            <li><a href="#">스토어 개설</a></li>
+                            <li><a href="#">지역업체 등록</a></li>
+                            <li><a href="#">엑스퍼트 등록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Developers</strong>
+                        <ul>
+                            <li><a href="#">네이버 개발자 센터</a></li>
+                            <li><a href="#">오픈 API</a></li>
+                            <li><a href="#">오픈소스</a></li>
+                            <li><a href="#">네이버 D2</a></li>
+                            <li><a href="#">네이버 D2SF</a></li>
+                            <li><a href="#">네이버 랩스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="util_quick2">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><span>웨일 브라우저</span><span>다운받기</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><span>프로젝트 꽃</span><span>바로가기</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+                <span>회사소개</span>
+                <span>인재채용</span>
+                <span>제휴제안</span>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+                <span>청소년보호정책</span>
+                <span>네이버정책</span>
+                <span>고객센터</span>
+                <p>&copy; NAVER Corp.</p>
+            </address>
+        </div>
+    </footer>
+    <div class="fixed_ui">
+        <div class="view_mode">
+            <button class="is_act dark_mode">다크모드로보기</button>
+            <button class="light_mode">라이트모드로 보기</button>
+        </div>
+        <button class="btn_up"><span class="blind">위로</span></button>
+    </div>
+    
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
